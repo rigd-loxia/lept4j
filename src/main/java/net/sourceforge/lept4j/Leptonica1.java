@@ -24,12 +24,13 @@ import com.sun.jna.ptr.DoubleByReference;
 import com.sun.jna.ptr.FloatByReference;
 import com.sun.jna.ptr.IntByReference;
 import com.sun.jna.ptr.PointerByReference;
+import net.sourceforge.lept4j.util.LoadLibs;
+
 import java.nio.ByteBuffer;
 import java.nio.DoubleBuffer;
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
 import java.nio.LongBuffer;
-import net.sourceforge.lept4j.util.LoadLibs;
 
 /**
  * JNA Wrapper for <b>Leptonica Image Processing Library</b> using
@@ -10875,10 +10876,10 @@ public class Leptonica1 implements Library, ILeptonica {
 
     /**
      * Original signature :
-     * <code>l_int32 pixGetAverageValue(PIX*, l_int32, l_int32, l_uint32*)</code><br>
+     * <code>l_int32 pixGetPixelStats(PIX*, l_int32, l_int32, l_uint32*)</code><br>
      * <i>native declaration : allheaders.h:3092</i>
      */
-    public static native int pixGetAverageValue(Pix pixs, int factor, int type, IntBuffer pvalue);
+    public static native int pixGetPixelStats(Pix pixs, int factor, int type, IntBuffer pvalue);
 
     /**
      * Original signature :
@@ -12222,10 +12223,10 @@ public class Leptonica1 implements Library, ILeptonica {
 
     /**
      * Original signature :
-     * <code>PIXA* pixaConvertTo8Color(PIXA*, l_int32)</code><br>
+     * <code>PIXA* pixaConvertTo8Colormap(PIXA*, l_int32)</code><br>
      * <i>native declaration : allheaders.h:3478</i>
      */
-    public static native Pixa pixaConvertTo8Color(Pixa pixas, int dither);
+    public static native Pixa pixaConvertTo8Colormap(Pixa pixas, int dither);
 
     /**
      * Original signature : <code>PIXA* pixaConvertTo32(PIXA*)</code><br>
@@ -13002,10 +13003,10 @@ public class Leptonica1 implements Library, ILeptonica {
 
     /**
      * Original signature :
-     * <code>PIX* pixConvertTo8Color(PIX*, l_int32)</code><br>
+     * <code>PIX* pixConvertTo8Colormap(PIX*, l_int32)</code><br>
      * <i>native declaration : allheaders.h:3710</i>
      */
-    public static native Pix pixConvertTo8Color(Pix pixs, int dither);
+    public static native Pix pixConvertTo8Colormap(Pix pixs, int dither);
 
     /**
      * Original signature : <code>PIX* pixConvertTo16(PIX*)</code><br>
