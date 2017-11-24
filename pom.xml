@@ -39,6 +39,20 @@
 		</license>
 	</licenses>
 
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>Releases</name>
+			<url>http://nexus-loxia:8081/nexus/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Snapshots</name>
+			<url>http://nexus-loxia:8081/nexus/content/repositories/snapshots</url>
+			<uniqueVersion>false</uniqueVersion>
+		</snapshotRepository>
+	</distributionManagement>
+
 	<scm>
 		<connection>scm:svn:https://github.com/nguyenq/lept4j/trunk</connection>
 		<developerConnection>scm:svn:https://github.com/nguyenq/lept4j/trunk</developerConnection>
